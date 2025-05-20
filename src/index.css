@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -49,6 +52,14 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Google colors */
+    --google-blue: 217 89% 61%;
+    --google-red: 0 87% 67%;
+    --google-yellow: 45 97% 50%;
+    --google-green: 120 61% 50%;
+    --google-link: 231 48% 48%;
+    --google-url: 120 100% 19%;
   }
 
   .dark {
@@ -96,6 +107,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Open Sans', sans-serif;
   }
 }
